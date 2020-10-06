@@ -13,6 +13,7 @@ class ViewController: UIViewController, WKNavigationDelegate {
     var webView: WKWebView!
     var progressView: UIProgressView!
     var websites = ["apple.com", "hackingwithswift.com"]
+    var url: URL?
     
     override func loadView() {
         webView = WKWebView()
@@ -32,13 +33,22 @@ class ViewController: UIViewController, WKNavigationDelegate {
         progressView.sizeToFit()
         let progressButton = UIBarButtonItem(customView: progressView)
         
-        toolbarItems = [progressButton, spacer, refresh]
+        let backButton = UIBarButtonItem(title: "Back", style: .plain, target: webView, action: #selector(webView.goBack))
+        let forwardButton = UIBarButtonItem(title: "Forward", style: .plain, target: webView, action: #selector(webView.goForward))
+        
+        toolbarItems = [backButton, forwardButton, progressButton, spacer, refresh]
         navigationController?.isToolbarHidden = false
         
         webView.addObserver(self, forKeyPath: #keyPath(WKWebView.estimatedProgress), options: .new, context: nil)
         
-        let url = URL(string: "https://" + websites[0])!
-        webView.load(URLRequest(url: url))
+        if url == nil {
+            url = URL(string: "https://" + websites[0])!
+        }
+        
+        if let url = url {
+            webView.load(URLRequest(url: url))
+        }
+        
         webView.allowsBackForwardNavigationGestures = true
     }
 
@@ -75,6 +85,10 @@ class ViewController: UIViewController, WKNavigationDelegate {
                 }
             }
         }
+        
+        let ac = UIAlertController(title: "Blocked", message: "That URL isn't allowed.", preferredStyle: .alert)
+        ac.addAction(UIAlertAction(title: "Cancel", style: .cancel))
+        present(ac, animated: true)
         
         decisionHandler(.cancel)
     }

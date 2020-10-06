@@ -15,6 +15,7 @@
 		BA9C172C252627DB00BCE255 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA9C172A252627DB00BCE255 /* LaunchScreen.storyboard */; };
 		BA9C1737252627DB00BCE255 /* Project_4Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9C1736252627DB00BCE255 /* Project_4Tests.swift */; };
 		BA9C1742252627DB00BCE255 /* Project_4UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9C1741252627DB00BCE255 /* Project_4UITests.swift */; };
+		BAE82F6E252B75070045F80C /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE82F6D252B75070045F80C /* TableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		BA9C173D252627DB00BCE255 /* Project 4UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Project 4UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA9C1741252627DB00BCE255 /* Project_4UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Project_4UITests.swift; sourceTree = "<group>"; };
 		BA9C1743252627DB00BCE255 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BAE82F6D252B75070045F80C /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				BA9C171F252627D900BCE255 /* AppDelegate.swift */,
 				BA9C1721252627D900BCE255 /* SceneDelegate.swift */,
 				BA9C1723252627D900BCE255 /* ViewController.swift */,
+				BAE82F6D252B75070045F80C /* TableViewController.swift */,
 				BA9C1725252627D900BCE255 /* Main.storyboard */,
 				BA9C1728252627DB00BCE255 /* Assets.xcassets */,
 				BA9C172A252627DB00BCE255 /* LaunchScreen.storyboard */,
@@ -261,6 +264,7 @@
 				BA9C1724252627D900BCE255 /* ViewController.swift in Sources */,
 				BA9C1720252627D900BCE255 /* AppDelegate.swift in Sources */,
 				BA9C1722252627D900BCE255 /* SceneDelegate.swift in Sources */,
+				BAE82F6E252B75070045F80C /* TableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
