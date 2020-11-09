@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vkP-eS-Dkb">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Project2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pat-pY-cfx">
+                                <rect key="frame" x="107" y="100" width="200" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="pat-pY-cfx" secondAttribute="height" multiplier="2:1" id="huD-yF-DDm"/>
+                                </constraints>
+                                <state key="normal" image="russia"/>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aTK-t5-DGh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J2b-O3-QPh">
+                                <rect key="frame" x="107" y="360" width="200" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="J2b-O3-QPh" secondAttribute="height" multiplier="2:1" id="SGo-WF-AXq"/>
+                                </constraints>
+                                <state key="normal" image="russia"/>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PZq-gb-Acg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="swt-0r-u8j">
+                                <rect key="frame" x="107" y="230" width="200" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="swt-0r-u8j" secondAttribute="height" multiplier="2:1" id="qAK-G6-9Jg"/>
+                                </constraints>
+                                <state key="normal" image="russia"/>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YVw-vO-k7N"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="J2b-O3-QPh" secondAttribute="bottom" constant="20" id="4gd-kg-xkW"/>
+                            <constraint firstItem="pat-pY-cfx" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="12" id="MrZ-lD-mfh"/>
+                            <constraint firstItem="J2b-O3-QPh" firstAttribute="top" secondItem="swt-0r-u8j" secondAttribute="bottom" constant="30" id="c00-iW-bOs"/>
+                            <constraint firstItem="J2b-O3-QPh" firstAttribute="centerX" secondItem="swt-0r-u8j" secondAttribute="centerX" id="c0C-HG-eAx"/>
+                            <constraint firstItem="pat-pY-cfx" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="dUg-H9-2aV"/>
+                            <constraint firstItem="swt-0r-u8j" firstAttribute="centerX" secondItem="pat-pY-cfx" secondAttribute="centerX" id="gLM-HC-CYh"/>
+                            <constraint firstItem="swt-0r-u8j" firstAttribute="top" secondItem="pat-pY-cfx" secondAttribute="bottom" constant="30" id="rmA-Yz-gAy"/>
+                            <constraint firstItem="swt-0r-u8j" firstAttribute="height" secondItem="pat-pY-cfx" secondAttribute="height" id="sGv-DL-5Kv"/>
+                            <constraint firstItem="J2b-O3-QPh" firstAttribute="height" secondItem="swt-0r-u8j" secondAttribute="height" id="wj2-pI-sKU"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="YgO-FT-ekP"/>
+                    <connections>
+                        <outlet property="button1" destination="pat-pY-cfx" id="eVc-51-UYG"/>
+                        <outlet property="button2" destination="swt-0r-u8j" id="HZR-QR-sZ9"/>
+                        <outlet property="button3" destination="J2b-O3-QPh" id="Nne-cc-af6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1047.8260869565217" y="125.89285714285714"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="eXe-Cq-6Gx">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="vkP-eS-Dkb" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="5P8-rM-x5e">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="V0q-2r-Wyt"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IfH-nc-WhT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="125.89285714285714"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="russia" width="200" height="100"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
